@@ -11,7 +11,7 @@ const MongoStore = require('connect-mongo');
 require('dotenv').config();
 
 const dburl = process.env.ATLAS_URL;
-const apiKey = process.env.GOOGLE_API_KEY; // Store your API key in .env
+const apiKey ="AIzaSyBF2wMokYFjp5JgDy3gbVigFfTr6S6RC-U"  ; // Store your API key in .env
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
