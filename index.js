@@ -126,7 +126,7 @@ app.post("/chatQ", async (req, res) => {
     res.redirect("/chatsrender");
   } catch (e) {
     console.error("Error posting chat:", e);
-    res.redirect("/chatsrender");
+    res.redirect("/");
   }
 });
 
@@ -197,7 +197,7 @@ app.post(
       }
 
       console.log("Logged In User:", user);
-      res.redirect("/chatsrender");
+      res.redirect("/");
     } catch (error) {
       console.error("Error during login:", error);
       res.redirect("/login");
