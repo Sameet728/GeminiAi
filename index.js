@@ -92,7 +92,7 @@ async function run(promptMsg) {
 }
 
 // Routes
-app.get("/chatsrender", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     let chating = await chats.find().populate("owner");
     res.render("../views/chat.ejs", { chating });
